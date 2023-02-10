@@ -1,0 +1,2 @@
+# TelerikMAUIBlazor
+Hello from Blazor
