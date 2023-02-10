@@ -26,5 +26,7 @@ public static class MauiProgram
         builder.Services.AddTelerikBlazor();
 
         return builder.Build();
+
 	}
+
 }

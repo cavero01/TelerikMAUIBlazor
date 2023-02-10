@@ -1,12 +1,15 @@
 ﻿@page "/fetchdata"
 @using Telerik.Blazor.Components
-@using TelerikMAUIBlazor.Data;
+@using TelerikMAUIBlazor
 @inject WeatherForecastService ForecastService
 
 <h1>Weather forecast</h1>
 
 <p>This component demonstrates fetching data from a service.</p>
-<TelerikGrid Data="forecasts">
+<TelerikGrid Data="forecasts"
+               Sortable="true" 
+               Pageable="true" 
+               FilterMode="GridFilterMode.FilterMenu">
     <GridColumns>
         <GridColumn Field="@nameof(WeatherForecast.Date)"></GridColumn>
         <GridColumn Field="@nameof(WeatherForecast.TemperatureC)"
